@@ -120,3 +120,15 @@ Route::group(['middleware' => ['auth', 'active']], function () {
         Route::get('roles/search', 'RoleController@index');
     });
 });
+
+/*
+|--------------------------------------------------------------------------
+| Note Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::resource('notes', 'NotesController', ['except' => ['show']]);
+Route::post('notes/search', [
+    'as' => 'notes.search',
+    'uses' => 'NotesController@search'
+]);

@@ -57,3 +57,19 @@ $factory->define(App\Models\Team::class, function (Faker\Generator $faker) {
         'name' => $faker->name
     ];
 });
+/*
+|--------------------------------------------------------------------------
+| Note Factory
+|--------------------------------------------------------------------------
+*/
+
+$factory->define(App\Models\Note::class, function (Faker\Generator $faker) {
+    return [
+
+        'id' => '1',
+		'title' => '1',
+		'body' => 'I am Batman',
+
+
+    ];
+});

@@ -78,7 +78,11 @@ return [
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
-
+        'testing' => [ 
+            'driver' => 'sqlite', 
+            'database' => ':memory:', 
+            'prefix' => '' 
+        ],
     ],
 
     /*
