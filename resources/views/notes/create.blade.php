@@ -1,15 +1,29 @@
-<div class="">
-    {{ Session::get('message') }}
-</div>
+@extends('dashboard', ['pageTitle' => '_camelUpper_casePlural_ &raquo; Create'])
 
-<div class="container">
+@section('content')
 
-    {!! Form::open(['route' => 'notes.store']) !!}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="pull-right raw-margin-top-24 raw-margin-left-24">
+                {!! Form::open(['route' => 'notes.search']) !!}
+                <input class="form-control form-inline pull-right" name="search" placeholder="Search">
+                {!! Form::close() !!}
+            </div>
+            <h1 class="pull-left">Notes: Create</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
 
-    @form_maker_table("notes")
+            {!! Form::open(['route' => 'notes.store']) !!}
 
-    {!! Form::submit('Save') !!}
+            @form_maker_table("notes")
 
-    {!! Form::close() !!}
+            {!! Form::submit('Save', ['class' => 'btn btn-primary pull-right']) !!}
 
-</div>
+            {!! Form::close() !!}
+
+        </div>
+    </div>
+
+@stop

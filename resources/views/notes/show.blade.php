@@ -1,5 +1,13 @@
-<div class="container">
+@extends('dashboard', ['pageTitle' => '_camelUpper_casePlural_ &raquo; Show'])
 
-    <!-- Put fields here -->
+@section('content')
 
-</div>
+    <div class="container">
+        <div class="col-md-12">
+
+        <!-- Put fields here -->
+
+        </div>
+    </div>
+
+@stop

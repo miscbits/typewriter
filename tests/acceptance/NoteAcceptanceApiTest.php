@@ -14,14 +14,20 @@ class NoteAcceptanceApiTest extends TestCase
 
         $this->note = factory(App\Models\Note::class)->make([
             'id' => '1',
-		'title' => '1',
+		'title' => 'laravel',
 		'body' => 'I am Batman',
+		'user_id' => '1',
+		'created_at' => '2016-11-15 12:18:35',
+		'updated_at' => '2016-11-15 12:18:35',
 
         ]);
         $this->noteEdited = factory(App\Models\Note::class)->make([
             'id' => '1',
-		'title' => '1',
+		'title' => 'laravel',
 		'body' => 'I am Batman',
+		'user_id' => '1',
+		'created_at' => '2016-11-15 12:18:35',
+		'updated_at' => '2016-11-15 12:18:35',
 
         ]);
         $user = factory(App\Repositories\User\User::class)->make();

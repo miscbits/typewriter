@@ -5839,6 +5839,13 @@ html, body {
   margin: 0 0 0 24px;
   padding: 0; }
 
+body {
+  font-family: "RoyalQuiet", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+  background-color: #fff; }
+
 /*
 |--------------------------------------------------------------------------
 | Sidebar
@@ -5893,5 +5900,9 @@ html, body {
 .nav-sidebar > .active > a:focus {
   color: #333;
   background-color: #FFF; }
+
+@font-face {
+  font-family: "RoyalQuiet";
+  src: url("../fonts/Royal Quiet Deluxe.ttf") format("truetype"); }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"app.js","sourcesContent":["$(function(){\n\n    $('.alert').delay(7000).fadeOut();\n\n});\n\n$(document).keydown(function(e) {\n    if (e.keyCode === 8 && !elid) {\n        return false;\n    };\n});\n"]}

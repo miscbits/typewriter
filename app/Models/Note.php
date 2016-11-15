@@ -13,9 +13,12 @@ class Note extends Model
     public $timestamps = true;
 
     public $fillable = [
-                'id',
-        'title',
-        'body',
+        		'id',
+		'title',
+		'body',
+		'user_id',
+		'created_at',
+		'updated_at',
 
     ];
 
@@ -23,9 +26,6 @@ class Note extends Model
         // create rules
     ];
 
-    
-    public function user() {
-        return $this->belongsTo(App\Models\User::class);
-    }
+    // Note 
 
 }

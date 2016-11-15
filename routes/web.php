@@ -132,3 +132,15 @@ Route::post('notes/search', [
     'as' => 'notes.search',
     'uses' => 'NotesController@search'
 ]);
+
+/*
+|--------------------------------------------------------------------------
+| Note Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::resource('notes', 'NotesController', ['except' => ['show']]);
+Route::post('notes/search', [
+    'as' => 'notes.search',
+    'uses' => 'NotesController@search'
+]);

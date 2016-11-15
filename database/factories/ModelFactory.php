@@ -73,3 +73,23 @@ $factory->define(App\Models\Note::class, function (Faker\Generator $faker) {
 
     ];
 });
+
+/*
+|--------------------------------------------------------------------------
+| Note Factory
+|--------------------------------------------------------------------------
+*/
+
+$factory->define(App\Models\Note::class, function (Faker\Generator $faker) {
+    return [
+
+        'id' => '1',
+		'title' => 'laravel',
+		'body' => 'I am Batman',
+		'user_id' => '1',
+		'created_at' => '2016-11-15 12:18:35',
+		'updated_at' => '2016-11-15 12:18:35',
+
+
+    ];
+});

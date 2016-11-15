@@ -23,11 +23,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        Gate::define('admin', function ($user) {
+        \Gate::define('admin', function ($user) {
             return ($user->roles->first()->name === 'admin');
         });
 
-        Gate::define('team-member', function ($user, $team) {
+        \Gate::define('team-member', function ($user, $team) {
             return ($user->teams->find($team->id));
         });
     }
